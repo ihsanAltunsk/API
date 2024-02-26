@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class Get_ApiQuery {
+public class C01GET_ApiQuery {
     // When we send a GET request to the URL https://restful-booker.herokuapp.com/booking/10,
     // the expected response should have:
     //   1- a status code of 200,

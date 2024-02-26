@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class Get_ResponseAssertion {
+public class C02GET_ResponseAssertion {
     // Automate the test for the response returned when we send a GET request to the URL https://restful-booker.herokuapp.com/booking/10,
     // ensuring that:
     //  1- the status code is 200,

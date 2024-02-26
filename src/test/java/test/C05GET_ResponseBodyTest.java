@@ -2,20 +2,19 @@ package test;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class Get_ResponseBodyTest {
+public class C05GET_ResponseBodyTest {
 
     //When we send a GET request to the URL https://jsonplaceholder.typicode.com/posts/44,
     //test that the returned response has:
-    //1- a status code of 200,
-    //2- a content type of ContentType.JSON,
-    //3- the userId in the response body is 5,
-    //4- and the title in the response body is "optio dolor molestias sit."
+    // 1- a status code of 200,
+    // 2- a content type of ContentType.JSON,
+    // 3- the userId in the response body is 5,
+    // 4- and the title in the response body is "optio dolor molestias sit."
     @Test
     public void get01(){
         // 1- Prepare Endpoint.

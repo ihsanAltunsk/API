@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class Put_ResponseAssertion {
+public class C04PUT_ResponseAssertion {
 
     /*
     When we send a PUT request to the URL https://jsonplaceholder.typicode.com/posts/70

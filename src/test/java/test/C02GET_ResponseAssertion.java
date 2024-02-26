@@ -24,6 +24,5 @@ public class C02GET_ResponseAssertion {
                 .contentType("application/json; charset=utf-8")
                 .header("Server", "Cowboy")
                 .statusLine("HTTP/1.1 200 OK");
-
     }
 }

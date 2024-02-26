@@ -39,7 +39,5 @@ public class C01GET_ApiQuery {
         System.out.println("Header value: " + response.getHeader("Server"));
         System.out.println("Status Line: " + response.getStatusLine());
         System.out.println("Response Time: " + response.getTime());
-
-
     }
 }

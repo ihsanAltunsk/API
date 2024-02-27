@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C05GET_ResponseBodyTest {
+public class C05_GET_ResponseBodyTest {
 
     //When we send a GET request to the URL https://jsonplaceholder.typicode.com/posts/44,
     //test that the returned response has:

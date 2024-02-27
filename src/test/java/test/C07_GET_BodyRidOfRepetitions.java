@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class C07GET_BodyRidOfRepetitions {
+public class C07_GET_BodyRidOfRepetitions {
 
     //When we send a GET request to the URL 'https://restful-booker.herokuapp.com/booking/10',
     //test the returned Response for the following:

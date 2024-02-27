@@ -4,7 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-public class C08JSONObjectDataRetrieving {
+public class C08_JSONObjectDataRetrieving {
     /*
     {
     "firstName": "John",

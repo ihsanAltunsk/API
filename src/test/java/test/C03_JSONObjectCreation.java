@@ -3,7 +3,7 @@ package test;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-public class C03JSONObjectCreation {
+public class C03_JSONObjectCreation {
     //Create and print the following JSON object on the console:
     /*
     {

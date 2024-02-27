@@ -2,14 +2,13 @@ package test;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
-public class C09POST_BodyTestWithJsonPath {
+public class C09_POST_BodyTestWithJsonPath {
     /*
     To the URL https://restful-booker.herokuapp.com/booking,
     when we send a POST request with the following body:

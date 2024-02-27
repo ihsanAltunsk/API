@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class C06POST_ResponseTest {
+public class C06_POST_ResponseTest {
     //When we send a POST request to the url 'https://jsonplaceholder.typicode.com/posts'
     //with the following body:
     //{

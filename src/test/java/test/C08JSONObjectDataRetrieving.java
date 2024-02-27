@@ -29,7 +29,7 @@ public class C08JSONObjectDataRetrieving {
 
      */
     @Test
-    public void jsonPath01(){
+    public void jsonObject01(){
         JSONObject phoneNumber = new JSONObject();
         phoneNumber.put("type" , "iPhone");
         phoneNumber.put("number" , "0123-4567-8888");

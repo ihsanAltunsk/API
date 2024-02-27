@@ -38,7 +38,6 @@ public class C11_GET_ExpectedDataCreation {
         Response response = given().when().get(url);
 
         // 4- Assertion.
-
         JsonPath responseJP = response.jsonPath();
         assertEquals(expectedData.get("userId") , responseJP.get("userId"));
         assertEquals(expectedData.get("id") , responseJP.get("id"));

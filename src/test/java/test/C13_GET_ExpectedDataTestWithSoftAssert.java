@@ -57,5 +57,7 @@ public class C13_GET_ExpectedDataTestWithSoftAssert {
         softAssert.assertEquals(expected.getJSONObject("data").get("employee_age") , responseJP.get("data.employee_age"));
         softAssert.assertEquals(expected.getJSONObject("data").get("profile_image") , responseJP.get("data.profile_image"));
         softAssert.assertEquals(expected.get("message") , responseJP.get("message"));
+
+        softAssert.assertAll();
     }
 }

@@ -66,10 +66,10 @@ public class C09_POST_BodyTestWithJsonPath {
         response.then().assertThat()
                 .statusCode(200)
                 .contentType("application/json; charset=utf-8")
-                .body("booking.firstname" , equalTo("Ali"),
+                .body("booking.firstname" , equalTo(requestBody.get("firstname")),
                 "booking.lastname" , equalTo("Bak"),
                          "booking.totalprice" , equalTo(500),
-                         "booking.depositpaid" , equalTo(false),
+                         "booking.depositpaid" , equalTo(true),
                          "booking.additionalneeds" , equalTo("wi-fi"),
                          "booking.bookingdates.checkin" , equalTo("2021-06-01"),
                          "booking.bookingdates.checkout" , equalTo("2021-06-10"));

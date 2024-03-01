@@ -3,13 +3,12 @@ package test;
 import baseUrl.JsonPlaceHolderBaseUrl;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.hamcrest.Matchers;
 import org.json.JSONObject;
 import org.junit.Test;
 import testData.TestDataJsonPlace;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
+import static org.junit.Assert.assertEquals;
 
 public class C18_GET_TestDataClassUsage extends JsonPlaceHolderBaseUrl {
     /*
@@ -32,17 +31,17 @@ public class C18_GET_TestDataClassUsage extends JsonPlaceHolderBaseUrl {
 
         // 2- Prepare the Expected Data.
         TestDataJsonPlace testDataJsonPlace = new TestDataJsonPlace();
-        JSONObject expectedBody = testDataJsonPlace.expectedBodyCreation();
+        JSONObject expectedData = testDataJsonPlace.expectedDataCreationJSON();
 
         // 3- Save Response.
         Response response = given().spec(specJsonPlace).when().get("/{pp1}/{pp2}");
         JsonPath responseJP = response.jsonPath();
 
         // 4- Assertion.
-        response.then().assertThat().statusCode(200).body("userId", equalTo(3) ,
-                                                       "id" , equalTo(22) ,
-                                                                "title" , equalTo("dolor sint quo a velit explicabo quia nam"),
-                                                                "body" , equalTo("eos qui et ipsum ipsam suscipit aut\nsed omnis non odio\nexpedita earum mollitia molestiae aut atque rem suscipit\nnam impedit esse"));
-
+        assertEquals(testDataJsonPlace.statusSuccess , response.getStatusCode());
+        assertEquals(expectedData.get("userId") , responseJP.get("userId"));
+        assertEquals(expectedData.get("id") , responseJP.get("id"));
+        assertEquals(expectedData.get("title") , responseJP.get("title"));
+        assertEquals(expectedData.get("body") , responseJP.get("body"));
     }
 }
